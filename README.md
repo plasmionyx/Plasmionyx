@@ -130,6 +130,94 @@ The measure of an advanced civilization is not how much power it possesses, but 
 PLASMIONYX
 Explore the cosmos. Protect our home.
 
+Help Build PLASMIONYX
+
+An Open Scientific Initiative Exploring Planetary Plasma Energy
+
+Explore the cosmos. Protect our home.
+
+Could the plasma and magnetic environments of the giant planets offer a pathway to useful electrical power?
+
+We don’t know yet. That’s exactly why we’re investigating.
+
+Plasmionyx is a proposed public-interest research initiative exploring the physics and engineering of possible energy extraction from Jupiter, Saturn, Uranus, and Neptune.
+
+Our goal is to determine what is physically possible, what might be technologically achievable, and whether any proposed system could deliver meaningful net electrical power.
+
+We believe ambitious questions deserve rigorous investigation, open collaboration, and a commitment to the public good.
+
+What we’re working toward
+
+We aim to:
+
+* Compare the plasma and electromagnetic environments of all four giant planets.
+* Investigate realistic energy-collection concepts, including electrodynamic tethers and electromagnetic induction.
+* Model potential electrical output, engineering requirements, operating losses, and uncertainty.
+* Identify the smallest practical experiments that could test key assumptions.
+* Publish reproducible methods, calculations, and findings, including negative results.
+* Explore the environmental and public-interest implications of any promising technology.
+
+We are not asking anyone to accept a conclusion in advance. We are building a research effort to find out what the evidence supports.
+
+Who we’d love to work with
+
+We’re looking for people willing to contribute knowledge, curiosity, and thoughtful criticism.
+
+* Plasma physicists and magnetospheric scientists to help establish the physical foundations.
+* Planetary scientists to interpret spacecraft observations and compare the four planetary environments.
+* Electrical and aerospace engineers to evaluate collection systems, materials, and operating constraints.
+* Scientific programmers and numerical modelers to build transparent, reproducible simulations.
+* Energy systems researchers to assess power conversion, losses, and realistic net output.
+* Research integrity and governance advisers to help establish transparent, independent oversight.
+* Educators, students, and public engagement volunteers to make the work accessible and invite broader participation.
+
+You do not need to fill every role, have an institutional affiliation, or contribute money. A focused contribution of a few hours a month could help us get started.
+
+How we’ll begin
+
+Our first phase will rely on public spacecraft data, existing research, open-source software, and collaborative modeling. We do not need to purchase hardware before establishing whether the underlying concepts merit further investigation.
+
+Our first major milestone is a reproducible feasibility assessment of Jupiter, Saturn, Uranus, and Neptune, reviewed by independent experts and shared publicly.
+
+We’ll document our assumptions, distinguish estimates from demonstrated results, and be honest about what we do not yet know.
+
+What makes this initiative different
+
+Plasmionyx is founded on the belief that scientific progress should serve people and the planet.
+
+We support:
+
+* Open research and independent review.
+* Transparent funding and decision-making.
+* Honest reporting of uncertainty and unfavorable results.
+* Environmental responsibility.
+* Fair access to the benefits of successful discoveries.
+* Collaboration across disciplines and national boundaries.
+
+We welcome skeptics as much as enthusiasts. Critical questions strengthen a project when everyone is committed to following the evidence.
+
+The bigger vision
+
+Imagine a future in which energy innovation helps restore ecosystems, expands human opportunity, and gives communities more freedom to shape their lives.
+
+That future will require more than new technology. It will require scientific honesty, responsible stewardship, and a commitment to ensuring that progress benefits humanity broadly.
+
+Plasmionyx begins with a question about distant worlds, but our purpose is rooted here at home.
+
+Join us
+
+If you have relevant expertise, enjoy investigating difficult scientific questions, or want to help build an open and responsible research community, we would love to hear from you.
+
+Tell us what you could contribute, what questions you think we should investigate first, or what assumptions you believe deserve the toughest scrutiny.
+
+Let’s explore the possibilities together, without promising what the evidence has not yet established.
+
+⸻
+
+PLASMIONYX
+Explore the cosmos. Protect our home.
+
+
 <!--
 **plasmionyx/Plasmionyx** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
