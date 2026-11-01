@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gas Giant Plasma Energy Initiative</title>
+    <meta
+      name="description"
+      content="A public research project exploring plasma energy capture from Jupiter, Saturn, Uranus, and Neptune."
+    />
+    <style>
+      :root {
+        --bg: #07111f;
+        --bg-alt: #0d1b2a;
+        --panel: rgba(11, 23, 36, 0.82);
+        --panel-strong: #101f2f;
+        --text: #edf6ff;
+        --muted: #a7bfd6;
+        --line: rgba(146, 179, 214, 0.2);
+        --cyan: #7ae7ff;
+        --blue: #5aa9ff;
+        --purple: #9c7dff;
+        --teal: #6ef2d7;
+        --gold: #f2be5c;
+        --shadow: rgba(14, 32, 54, 0.8);
+      }
+
+      * { box-sizing: border-box; }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family: Inter, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        background:
+          radial-gradient(circle at top, rgba(76, 120, 255, 0.16), transparent 20%),
+          linear-gradient(180deg, #040b14 0%, var(--bg) 38%, #081520 100%);
+        color: var(--text);
+        line-height: 1.6;
+      }
+
+      img {
+        max-width: 100%;
+        display: block;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .container {
+        width: min(1180px, calc(100vw - 32px));
+        margin: 0 auto;
+      }
+
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        backdrop-filter: blur(12px);
+        background: rgba(7, 17, 31, 0.7);
+        border-bottom: 1px solid var(--line);
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 72px;
+        gap: 24px;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+      }
+
+      .brand-mark {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--cyan), var(--purple));
+        box-shadow: 0 0 20px rgba(122, 231, 255, 0.8);
+        position: relative;
+      }
+
+      .brand-mark::before {
+        content: "";
+        position: absolute;
+        inset: 6px;
+        border-radius: 50%;
+        border: 2px solid rgba(255,255,255,0.85);
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      .nav-links a:hover { color: var(--text); }
+
+      .nav-cta {
+        background: linear-gradient(135deg, var(--cyan), var(--blue));
+        color: #06111a;
+        padding: 10px 18px;
+        border-radius: 999px;
+        font-weight: 700;
+        box-shadow: 0 12px 30px rgba(90, 169, 255, 0.35);
+      }
+
+      .hero {
+        padding: 80px 0 56px;
+      }
+
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 42px;
+        align-items: center;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 6px 12px;
+        border: 1px solid rgba(122, 231, 255, 0.35);
+        background: rgba(122, 231, 255, 0.08);
+        color: var(--cyan);
+        border-radius: 999px;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        margin-bottom: 18px;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2.8rem, 5vw, 5.3rem);
+        line-height: 0.98;
+        letter-spacing: -0.06em;
+      }
+
+      .lead {
+        margin-top: 18px;
+        max-width: 620px;
+        color: var(--muted);
+        font-size: 1.08rem;
+      }
+
+      .hero-actions {
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 48px;
+        padding: 0 22px;
+        border-radius: 999px;
+        border: 1px solid transparent;
+        font-weight: 700;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .button:hover { transform: translateY(-2px); }
+
+      .button.primary {
+        background: linear-gradient(135deg, var(--cyan), var(--blue));
+        color: #041722;
+        box-shadow: 0 18px 40px rgba(90, 169, 255, 0.25);
+      }
+
+      .button.secondary {
+        background: rgba(255,255,255,0.02);
+        border-color: var(--line);
+        color: var(--text);
+      }
+
+      .hero-stats {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(120px, 1fr));
+        gap: 16px;
+        margin-top: 30px;
+      }
+
+      .stat {
+        padding: 18px 16px;
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        background: rgba(16, 31, 47, 0.7);
+      }
+
+      .stat strong {
+        display: block;
+        font-size: clamp(1.4rem, 2vw, 2.2rem);
+        letter-spacing: -0.05em;
+      }
+
+      .stat span {
+        color: var(--muted);
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+
+      .planet-card {
+        position: relative;
+        background: linear-gradient(180deg, rgba(14, 32, 54, 0.92), rgba(9, 18, 28, 0.92));
+        border: 1px solid var(--line);
+        border-radius: 28px;
+        padding: 24px;
+        overflow: hidden;
+        box-shadow: 0 30px 80px rgba(0, 0, 0, 0.3);
+      }
+
+      .planet-card::before {
+        content: "";
+        position: absolute;
+        width: 240px;
+        height: 240px;
+        border-radius: 50%;
+        background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.5), rgba(255,255,255,0.05) 30%, rgba(114, 159, 255, 0.1) 60%, transparent 70%);
+        right: -50px;
+        top: -30px;
+        pointer-events: none;
+      }
+
+      .planet-system {
+        position: relative;
+        min-height: 470px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .planet {
+        position: absolute;
+        border-radius: 50%;
+        box-shadow:
+          inset -18px -26px 32px rgba(0,0,0,0.25),
+          inset 18px 18px 22px rgba(255,255,255,0.08),
+          0 30px 60px rgba(9, 21, 35, 0.3);
+      }
+
+      .planet.jupiter { width: 200px; height: 200px; background: radial-gradient(circle at 30% 25%, #f1d3a0, #d08f50 30%, #9b5f33 62%, #3c251a 100%); left: 55px; top: 150px; }
+      .planet.saturn { width: 150px; height: 150px; background: radial-gradient(circle at 35% 28%, #e8d7aa, #b28c5a 35%, #6b4b2a 72%, #2f1f1a 100%); right: 72px; top: 70px; }
+      .planet.uranus { width: 120px; height: 120px; background: radial-gradient(circle at 35% 28%, #d9feff, #8ce9f7 42%, #4da9c7 68%, #1f5871 100%); left: 20px; bottom: 50px; }
+      .planet.neptune { width: 120px; height: 120px; background: radial-gradient(circle
